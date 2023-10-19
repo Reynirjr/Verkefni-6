@@ -1,0 +1,21 @@
+{
+  "name": "verkefni6",
+  "version": "1.0.0",
+  "description": "Sjá lýsingu á verkefni.",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch .scss styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint": "stylelint styles.scss ./**/.scss"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.4.0",
+    "sass": "^1.55.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-sass-guidelines": "^9.0.1"
+  }
+}

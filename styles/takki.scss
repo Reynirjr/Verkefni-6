@@ -1,0 +1,26 @@
+ /* Takki */
+  
+ .button {
+    display: inline-block;
+  
+    border: 1px solid var(--color-dark);
+    border-radius: var(--border-radius);
+    padding: calc(var(--spacing) / 2) calc(var(--spacing));
+  
+    font-family: var(--font-family-base);
+    text-decoration: none;
+    text-align: center;
+  
+    color: var(--color-light);
+    background-color: var(--color-dark);
+  
+    transition: background-color var(--transition-time-short)
+        var(--transition-timing-function),
+      color var(--transition-time-short);
+  }
+  
+  .button:hover {
+    color: var(--color-dark);
+    background-color: var(--color-gold);
+  }
+  

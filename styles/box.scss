@@ -1,0 +1,69 @@
+/* Box! */
+  
+.boxes {
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--vertical-space);
+    justify-items: center;
+  
+    width: 100%;
+  }
+  
+  @media (min-width: 500px) {
+    .boxes {
+      grid-template-columns: repeat(var(--columns), 1fr);
+      grid-template-rows: auto;
+    }
+  }
+  
+  .boxes .box {
+    grid-column: span 12;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: var(--spacing);
+  
+    padding: calc(var(--spacing) * 0.5);
+    width: 100%;
+    min-height: 100px;
+  
+    color: var(--color-dark);
+    background-color: var(--color-gold-light);
+    border-radius: 5px;
+  }
+  
+  @media (min-width: 500px) {
+    .boxes .box {
+      grid-column: span 6;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .boxes .box {
+      grid-column: span 4;
+    }
+  }
+  
+  .boxes .box .title {
+    margin-bottom: calc(var(--spacing) * 0.5);
+    border-bottom: var(--border-small) solid var(--color-dark);
+  }
+  
+  .boxes .box .content {
+    flex: 1;
+  }
+  
+  .boxes .box img {
+    max-height: 400px;
+  
+    object-fit: cover;
+    object-position: top center;
+  }
+  
+  @media (min-width: 1000px) {
+    .boxes .box img {
+      max-height: 350px;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+ /* Almennt */
+  
+ html,
+ input,
+ select,
+ button {
+   font-size: var(--font-base-body-px);
+   font-family: var(--font-family-base);
+ }
+ 
+ h1,
+ h2,
+ h3 {
+   /* Setjum almennt bil á eftir fyrirsögnum */
+   margin-bottom: var(--spacing);
+ 
+   font-family: var(--font-family-heading);
+ }
+ 
+ a {
+   color: inherit;
+   background-color: inherit;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+  /** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+ 

@@ -1,0 +1,17 @@
+/* Matseðill */
+  
+table {
+    border-spacing: 0;
+  }
+  
+  table th,
+  table td {
+    padding: calc(var(--spacing) * 0.5);
+    text-align: left;
+  }
+  
+  table tbody tr:nth-child(2n + 1) {
+    color: var(--color-dark);
+    background-color: var(--color-gold);
+  }
+  

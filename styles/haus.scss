@@ -1,0 +1,25 @@
+/** Haus **/
+  
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+  
+    padding-top: var(--spacing);
+    width: 100%;
+    border-bottom: var(--border-large) solid var(--color-gold);
+  
+    background-color: var(--color-dark);
+    color: var(--color-gold-light);
+  }
+  
+  .header header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    max-width: var(--width-offset);
+  
+    text-align: center;
+  }
